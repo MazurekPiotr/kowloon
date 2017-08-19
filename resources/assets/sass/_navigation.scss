@@ -1,0 +1,124 @@
+.sidenav {
+    @include transition(.5s);
+    width: 60px;
+    min-height: 100vh;
+    height: 100vmax;
+    background-color: #313233;
+    position: fixed;
+    z-index: 10;
+
+    a {
+        text-decoration: none;
+        font-size: 1.3em;
+        color: white;
+
+        &:nth-child(-n+4) {
+            opacity: 0.5;
+        }
+
+        span {
+            pointer-events: none;
+        }
+    }
+
+    hr {
+        width: 80%;
+        opacity: 0.3;
+    }
+
+    .sidenav-text {
+        opacity: 0;
+        position: absolute;
+        left: 75px;
+        margin-top: -34px;
+        white-space: nowrap;
+    }
+}
+
+.nav-bottom {
+    position: absolute;
+    top: 95vh;
+    left: 17px;
+    width: 21px;
+    overflow: hidden;
+}
+
+.nav-item {
+    height: 52px;
+    width: 60px;
+    background: url('/img/nav/nav-basic-sprite1.png');
+    background-repeat: no-repeat;
+}
+
+.nav-expend {
+    background-position-y: -52px;
+}
+
+.search {
+    background-position-y: -52px;
+}
+
+.faq {
+    background-position-y: -104px;
+}
+
+.contact {
+    background-position-y: -156px;
+}
+
+.dogarticle {
+    background-position-y: -208px;
+}
+
+.catarticle {
+    background-position-y: -260px;
+}
+
+.fisharticle {
+    background-position-y: -312px;
+}
+
+.birdarticle {
+    background-position-y: -364px;
+}
+
+.smallarticle {
+    background-position-y: -416px;
+}
+
+.birdarticle,
+.catarticle,
+.contact,
+.dogarticle,
+.faq,
+.fisharticle,
+.search,
+.smallarticle {
+    &:hover {
+        background-position-x: -60px;
+    }
+}
+
+.active {
+    background-position-x: -60px;
+}
+
+.sidenav-big {
+    @extend .sidenav;
+    @include transition(.5s);
+    width: 220px;
+
+    .sidenav-text {
+        @include transition(1.5s);
+        opacity: 1;
+    }
+
+    .nav-bottom {
+        @include transition(.5s);
+        width: 220px;
+    }
+
+    span {
+        pointer-events: auto;
+    }
+}

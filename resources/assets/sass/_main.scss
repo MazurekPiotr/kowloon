@@ -1,0 +1,46 @@
+
+body {
+    height: 100%;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    float: right;
+    width: calc(100% - 60px);
+    background-color: #444546;
+    min-height: 100vh;
+    overflow: scroll;
+}
+
+.centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+i {
+    cursor: pointer;
+}
+
+
+.logo {
+    position: absolute;
+    z-index: 3;
+    left: 40%;
+    top: 7%;
+}
+
+.link-to-more {
+    margin-top: 10px;
+    float: right;
+
+    a {
+        font-family: choplin-medium;
+        text-decoration: none;
+        color: white;
+    }
+}

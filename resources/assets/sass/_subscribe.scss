@@ -1,0 +1,53 @@
+.newsletter {
+    margin-top: 50px;
+    margin-bottom: 150px;
+
+    .adv {
+        height: 200px;
+        background-image: url("/img/newsletter/discover.png");
+        text-align: center;
+        color: white;
+        font-family: choplin-medium;
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        h4 {
+            line-height: 120px;
+            vertical-align: bottom;
+        }
+    }
+
+    .subscribe {
+        height: 200px;
+        background-color: #5f5f5f;
+        color: white;
+
+        h3 {
+            margin-top: 35px;
+        }
+
+        span {
+            opacity: 0.6;
+        }
+    }
+
+    .form-subscribe {
+        margin: 25px 0;
+        color: black;
+
+        button {
+            background-color: #323232;
+            color: white;
+            border: none;
+            height: 3em;
+            width: 3em;
+        }
+
+        input {
+            height: 2.9em;
+            width: 80%;
+        }
+    }
+}

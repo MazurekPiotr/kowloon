@@ -1,0 +1,123 @@
+.intro {
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.categories {
+    margin-top: 50px;
+}
+
+.no-border {
+  border: none !important;
+}
+
+.category-space {
+  border-right: 1px solid #616161;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 65px;
+  padding-top: 5px;
+
+  p {
+      font-family: choplin-light;
+      position: absolute;
+      color: white;
+      font-size: 1.2em;
+      bottom: 10px;
+      text-align: center;
+  }
+
+  .except {
+    bottom: -5px !important;
+  }
+
+  &:hover {
+    background-color: #313233;
+
+    .dogcategory,
+    .catcategory,
+    .fishcategory,
+    .birdcategory,
+    .smallcategory,
+    .othercategory {
+      background-position-y: 66px;
+    }
+  }
+
+}
+
+.animal {
+    height: 66px;
+    min-width: 161px;
+    background: url('/img/categories/category-sprite4.png');
+    background-repeat: no-repeat;
+    text-align: center;
+
+    &:hover {
+      background-color: #313233;
+
+      p {
+        background-color:  #313233;
+      }
+    }
+}
+
+.dogcategory {
+    background-position-x: 0;
+}
+
+.catcategory {
+    background-position-x: -161px;
+}
+
+.fishcategory {
+    background-position-x: -322px;
+}
+
+.birdcategory {
+    background-position-x: -483px;
+}
+
+.smallcategory {
+    background-position-x: -644px;
+
+}
+
+.othercategory {
+    background-position-x: -805;
+}
+
+
+.hot-products {
+    margin-top: 50px;
+    color: white;
+
+    .product {
+        margin: 0 5px;
+    }
+
+    h1,
+    h4 {
+        font-family: Choplin-Medium;
+    }
+
+    .products {
+        display: flex;
+        justify-content: space-between;
+        z-index: 2;
+
+        .product {
+            flex-grow: 1;
+
+            &:first-child {
+                margin-left: 0 !important;
+            }
+
+            &:last-child {
+                margin-right: 0 !important;
+            }
+        }
+    }
+}
